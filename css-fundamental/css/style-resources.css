@@ -22,11 +22,12 @@ html {
 /* Rulesets to be matched up with selectors */
 .card {
     width: 35em;
-    height: 22em;
+    height: auto;
     margin: 5em auto;
     background-color: red;
     border: 0.2em solid black;
     border-radius: 1.5em;
+    box-shadow: 0 0 0 1em rgba(0,0,0, 0.3);
 }
 
 .card header {
@@ -39,37 +40,42 @@ html {
     border-radius: 0 0 1.5em 1.5em;
 }
 
-/*stg*/
-.card header, .card footer {
-    height: 5em;
-    padding: 1em;
-}
-
 .card article img {
     max-height: 100%;
     float: right;
 }
 
+/*1*/
+.card header, .card footer {
+    height: 5em;
+    padding: 1em;
+}
+
+/*2*/
 .card article p,  .card header h2 {
     margin: 0;
 }
 
+/*4*/
 .card header h2 {
     font-size: 2em;
-    line-height: 1.5;
+    line-height: 3;
 }
 
+/*3*/
 .card article {
     height: 12em;
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+/*5*/
 .card footer p {
     font-size: 1.5em;
-    line-height: 2;
 }
 
-/*stg*/
+/*6*/
 .card article p {
-    color: white;
+    color: rgba(255,255,255, 0.95);
+    padding: 1.5em 0 1.5em 1em;
+    line-height: 1.25;
 }
