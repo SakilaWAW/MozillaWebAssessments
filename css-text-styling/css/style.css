@@ -1,0 +1,166 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header, section, aside, nav, footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* import font */
+@font-face {
+    font-family: 'reckoner-bold';
+    src: url('../fonts/reckoner/Reckoner_Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geosans-light';
+    src: url('../fonts/geo_sans_light/GeosansLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* prepare for adjusting the font size with rem */
+html {
+    font-size: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'reckoner-bold', monospace;
+    letter-spacing: 0.016rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 0.48rem;
+}
+
+body {
+    font-family: 'Geosans-light', monospace;
+    line-height: 1.5;
+    font-size: 0.16rem;
+}
+
+/* add an icon after links */
+section p a {
+    background: transparent url('../imgs/external-link-52.png') 100% no-repeat;
+    background-size: 0.16rem 0.16rem;
+    padding-right: 0.16rem;
+}
+
+/* add paragraph indents */
+h2 + p {
+    text-indent: 0.24rem;
+}
+
+/* decorate links */
+a:link {
+    color: #a66;
+}
+
+a:visited {
+    color: #33068b;
+}
+
+a:focus {
+    color: red;
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    color: #ff30dc;
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+}
+
+/* decorate the ul code */
+ul {
+    list-style-type: square;
+}
+
+/* navigate bar bingo! */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    border: #a66 solid 1px;
+    width: 1.3rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    margin: 0.1rem;
+    font-size: 0.2rem;
+}
+
+/* five click status */
+nav ul li a:link {
+    border-color: #a66;
+    color: #a66;
+}
+
+nav ul li a:visited {
+    border-color: #33068b;
+    color: #33068b;
+}
+
+nav ul li a:focus {
+    border-color: red;
+    color: red;
+}
+
+nav ul li a:hover {
+    border-color: #ff30dc;
+    color: #ff30dc;
+    background: #000a;
+}
+
+nav ul li a:active {
+    border-color: red;
+    color: red;
+}
