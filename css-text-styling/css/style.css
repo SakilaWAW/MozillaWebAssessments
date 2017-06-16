@@ -157,7 +157,7 @@ nav ul li a:focus {
 nav ul li a:hover {
     border-color: #ff30dc;
     color: #ff30dc;
-    background: #000a;
+    background: rgba(0,0,0, 0.01);
 }
 
 nav ul li a:active {
